@@ -1,6 +1,6 @@
 # Health Dashboard
 
-Last snapshot: (auto)
+Last snapshot: 20251230-114325
 
 ## Services
 - Core: pending
