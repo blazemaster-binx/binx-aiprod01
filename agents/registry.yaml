@@ -1,0 +1,17 @@
+# Agent Registry
+
+agents:
+  - name: controller
+    purpose: Orchestrates AI jobs and routing
+    owner: CTO
+    status: active
+    inputs: [queue, api]
+    outputs: [jobs, logs]
+    tools: [ssh, http]
+  - name: monitor
+    purpose: Health checks and alerting
+    owner: Ops
+    status: planned
+    inputs: [metrics, logs]
+    outputs: [alerts]
+    tools: [prometheus, webhook]
