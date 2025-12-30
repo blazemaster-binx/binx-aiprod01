@@ -1,0 +1,12 @@
+name: controller
+purpose: Orchestrates AI jobs and routing
+owner: CTO
+inputs:
+  - queue
+  - api
+outputs:
+  - jobs
+  - logs
+tools:
+  - ssh
+  - http

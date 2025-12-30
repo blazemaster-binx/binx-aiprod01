@@ -1,0 +1,7 @@
+name: daily-inventory
+schedule: 02:15
+steps:
+  - name: snapshot
+    action: run-snapshots
+  - name: report
+    action: update-health
