@@ -1,10 +1,10 @@
-# BINXAIPROD01
+# BINX AI Operations
 
-Purpose: baseline config snapshot and ops notes for BINXAIPROD01.
+This repo tracks BINX AI infrastructure state, runbooks, and ops automation.
 
-## Contents
-- docs/: runbooks, architecture, notes
-- config/: exported configs (sanitized)
-- scripts/: maintenance scripts
-- services/: systemd/unit files, docker compose
-- inventory/: host facts, versions, network info
+## Structure
+- docs/: architecture, agents, runbooks
+- config/: sanitized configs and references
+- scripts/: automation scripts
+- services/: service/unit definitions
+- inventory/: periodic host snapshots
