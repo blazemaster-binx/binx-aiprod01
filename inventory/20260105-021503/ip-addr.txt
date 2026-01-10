@@ -1,0 +1,96 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:2a:74:1f brd ff:ff:ff:ff:ff:ff
+    inet 192.168.2.221/24 brd 192.168.2.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::215:5dff:fe2a:741f/64 scope link 
+       valid_lft forever preferred_lft forever
+3: tailscale0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1280 qdisc fq_codel state UNKNOWN group default qlen 500
+    link/none 
+    inet 100.78.208.44/32 scope global tailscale0
+       valid_lft forever preferred_lft forever
+    inet6 fd7a:115c:a1e0::d801:d064/128 scope global 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::5624:41fc:be:9b7d/64 scope link stable-privacy 
+       valid_lft forever preferred_lft forever
+4: br-fdc22c917077: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether a2:41:a1:9f:10:87 brd ff:ff:ff:ff:ff:ff
+    inet 172.21.0.1/16 brd 172.21.255.255 scope global br-fdc22c917077
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a041:a1ff:fe9f:1087/64 scope link 
+       valid_lft forever preferred_lft forever
+5: br-bcb32d27194c: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 16:e7:34:3d:5f:3d brd ff:ff:ff:ff:ff:ff
+    inet 172.19.0.1/16 brd 172.19.255.255 scope global br-bcb32d27194c
+       valid_lft forever preferred_lft forever
+    inet6 fe80::14e7:34ff:fe3d:5f3d/64 scope link 
+       valid_lft forever preferred_lft forever
+6: br-d2760887c1af: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 1e:06:a2:c1:f6:bd brd ff:ff:ff:ff:ff:ff
+    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-d2760887c1af
+       valid_lft forever preferred_lft forever
+    inet6 fe80::1c06:a2ff:fec1:f6bd/64 scope link 
+       valid_lft forever preferred_lft forever
+7: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 4a:99:01:e1:82:de brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+8: br-faffe81414f0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 62:f0:d2:ed:a5:e5 brd ff:ff:ff:ff:ff:ff
+    inet 172.20.0.1/16 brd 172.20.255.255 scope global br-faffe81414f0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::60f0:d2ff:feed:a5e5/64 scope link 
+       valid_lft forever preferred_lft forever
+9: veth5729e6b@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-d2760887c1af state UP group default 
+    link/ether 56:bd:bd:57:ba:e6 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet6 fe80::54bd:bdff:fe57:bae6/64 scope link 
+       valid_lft forever preferred_lft forever
+10: veth94caef7@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-faffe81414f0 state UP group default 
+    link/ether de:67:69:dc:ec:d3 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+    inet6 fe80::dc67:69ff:fedc:ecd3/64 scope link 
+       valid_lft forever preferred_lft forever
+11: veth5c23dc9@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-bcb32d27194c state UP group default 
+    link/ether de:0c:02:cf:70:10 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+    inet6 fe80::dc0c:2ff:fecf:7010/64 scope link 
+       valid_lft forever preferred_lft forever
+12: vethc72138c@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-fdc22c917077 state UP group default 
+    link/ether ce:b5:48:b6:27:42 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+    inet6 fe80::ccb5:48ff:feb6:2742/64 scope link 
+       valid_lft forever preferred_lft forever
+13: veth6e530c1@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-d2760887c1af state UP group default 
+    link/ether 0a:dd:c1:fa:1f:c8 brd ff:ff:ff:ff:ff:ff link-netnsid 4
+    inet6 fe80::8dd:c1ff:fefa:1fc8/64 scope link 
+       valid_lft forever preferred_lft forever
+14: veth6429ffc@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-bcb32d27194c state UP group default 
+    link/ether 46:26:87:dd:98:53 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+    inet6 fe80::4426:87ff:fedd:9853/64 scope link 
+       valid_lft forever preferred_lft forever
+15: vethf7423e3@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-d2760887c1af state UP group default 
+    link/ether 3e:22:82:15:eb:76 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+    inet6 fe80::3c22:82ff:fe15:eb76/64 scope link 
+       valid_lft forever preferred_lft forever
+16: veth9bf0bcd@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-fdc22c917077 state UP group default 
+    link/ether ce:64:3c:f8:2f:ad brd ff:ff:ff:ff:ff:ff link-netnsid 7
+    inet6 fe80::cc64:3cff:fef8:2fad/64 scope link 
+       valid_lft forever preferred_lft forever
+17: veth1a32516@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-bcb32d27194c state UP group default 
+    link/ether 5a:43:4e:0e:96:60 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+    inet6 fe80::5843:4eff:fe0e:9660/64 scope link 
+       valid_lft forever preferred_lft forever
+18: veth5af4869@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-fdc22c917077 state UP group default 
+    link/ether ca:d2:0d:d5:8c:dd brd ff:ff:ff:ff:ff:ff link-netnsid 9
+    inet6 fe80::c8d2:dff:fed5:8cdd/64 scope link 
+       valid_lft forever preferred_lft forever
+19: vethd4fe941@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-bcb32d27194c state UP group default 
+    link/ether 8a:09:8c:36:7f:ce brd ff:ff:ff:ff:ff:ff link-netnsid 10
+    inet6 fe80::8809:8cff:fe36:7fce/64 scope link 
+       valid_lft forever preferred_lft forever
+20: vethd23a074@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-fdc22c917077 state UP group default 
+    link/ether 1a:22:71:62:46:ea brd ff:ff:ff:ff:ff:ff link-netnsid 11
+    inet6 fe80::1822:71ff:fe62:46ea/64 scope link 
+       valid_lft forever preferred_lft forever

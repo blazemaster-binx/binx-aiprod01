@@ -1,0 +1,7 @@
+100.78.208.44   binx            binx.taild81b3f.ts.net  linux    -                                                              
+100.85.42.116   binxnet01       tagged-devices          windows  active; direct 192.168.2.56:41641, tx 1323218348 rx 266107644  
+100.66.215.17   erp             bodhiusainc@            linux    active; direct 192.168.2.215:41641, tx 1137276 rx 15814180     
+100.119.186.68  mail            tagged-devices          linux    active; direct 167.20.231.231:41641, tx 758256 rx 13504544     
+100.103.213.41  manguminspiron  tagged-devices          windows  offline, last seen 13d ago                                     
+100.67.44.58    mangumlat       tagged-devices          windows  offline, last seen 5m ago                                      
+100.94.30.114   nextcloud       tagged-devices          linux    active; direct 192.168.2.216:41641, tx 1106100 rx 17091892     
